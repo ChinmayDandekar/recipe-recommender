@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+  --darkblue: #08132e;
+  --lightblue: #79DCD0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: 'Noto Sans', sans-serif;
+  margin:0px;
+  padding:0px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: var(--lightblue);
+}
+.header{
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h1{
+  color: var(--darkblue);
+  position: absolute;
+  top:25px;
+  left:30px;
+}
+
+#headerTab{
+  position: absolute;
+  top:0;
+  left:0;
+
+
+  margin-top: -90px;
+  margin-left: -10px;
+  z-index: -1;
+
+}
+
+.header-buttons{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  position: absolute;
+  top:30px;
+  right: 40px;
+  width: 300px;
+  /* background-color: RED; */
+  justify-content: space-between ;
 }
 
-.App-link {
-  color: #61dafb;
+.header-buttons li{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-buttons button{
+  color: var(--darkblue);
+  font-weight: 700;
+  padding:10px 20px;
+  background-color: transparent;
+  border:none;
+  border: 3px var(--darkblue) solid;
+  border-radius: 20px;
 }
