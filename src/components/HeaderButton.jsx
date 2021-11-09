@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HeaderButton = ({ Name }) => {
-    console.log(Name)
+    // console.log(Name)
     return (
         <li>
             <button>{ Name }</button>
